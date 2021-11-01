@@ -26,11 +26,13 @@ body {
 }
 
 .card-container {
-    width: 30%;
+    /* width: 50%; */
+    width: 450px;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     text-align: center;
 }
@@ -44,13 +46,22 @@ main {
     padding: 0 2.5rem;
 }
 
-main h1 {
-    font-size: 1.75rem;
+h1,
+h2 {
+    color: var(--color-dark-blue);
 }
 
-main p {
-    padding: 1rem 0;
+h1 {
+    font-size: 1.85rem;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 1rem;
     color: var(--color-desaturated-blue);
+    margin-bottom: 1rem;
 }
 .order-plan {
     display: flex;
@@ -59,23 +70,41 @@ main p {
     background-color: var(--color-very-pale-blue);
     border-radius: 10px;
     padding: 1rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .order-plan-annual {
     flex: 1;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.order-plan-annual h2 {
+    font-size: 1rem;
+    padding-bottom: 0.35rem;
+}
+
+.order-plan-annual span {
+    color: var(--color-desaturated-blue);
+    /* font-size: 1.2rem; */
 }
 
 .btn {
     display: block;
     width: 100%;
-    margin-bottom: 1rem;
     text-decoration: none;
 }
 
 .btn-proceed {
     background-color: var(--color-bright-blue);
     color: #fff;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
     border-radius: 10px;
+}
+
+.btn-cancel {
+    margin-bottom: 2.5rem;
+    color: var(--color-desaturated-blue);
+    font-weight: 700;
 }
