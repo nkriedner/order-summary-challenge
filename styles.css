@@ -35,6 +35,8 @@ body {
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0 10px 20px hsl(224, 23%, 75%);
+    /* box-shadow: 0 5px 20px var(--color-desaturated-blue); */
 }
 
 header img {
@@ -69,14 +71,19 @@ p {
     align-items: center;
     background-color: var(--color-very-pale-blue);
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.25rem;
     margin-bottom: 2rem;
+}
+
+.order-plan a,
+.order-plan a:visited {
+    color: var(--color-bright-blue);
 }
 
 .order-plan-annual {
     flex: 1;
     text-align: left;
-    padding-left: 1.5rem;
+    padding-left: 1.6rem;
 }
 
 .order-plan-annual h2 {
@@ -86,7 +93,6 @@ p {
 
 .order-plan-annual span {
     color: var(--color-desaturated-blue);
-    /* font-size: 1.2rem; */
 }
 
 .btn {
@@ -99,8 +105,14 @@ p {
     background-color: var(--color-bright-blue);
     color: #fff;
     padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     border-radius: 10px;
+    box-shadow: 0 10px 20px hsl(224, 23%, 75%);
+    transition: all 0.3s;
+}
+
+.btn-proceed:hover {
+    box-shadow: none;
 }
 
 .btn-cancel {
