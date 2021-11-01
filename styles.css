@@ -26,21 +26,56 @@ body {
 }
 
 .card-container {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
 }
 
+header img {
+    width: 100%;
+    margin-bottom: 1.75rem;
+}
+
+main {
+    padding: 0 2.5rem;
+}
+
+main h1 {
+    font-size: 1.75rem;
+}
+
+main p {
+    padding: 1rem 0;
+    color: var(--color-desaturated-blue);
+}
 .order-plan {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-very-pale-blue);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.75rem;
 }
 
 .order-plan-annual {
     flex: 1;
 }
 
-button {
+.btn {
     display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.btn-proceed {
+    background-color: var(--color-bright-blue);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
 }
