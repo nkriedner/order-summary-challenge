@@ -20,6 +20,7 @@ body {
     background-color: var(--color-pale-blue);
     background-image: url("images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -131,5 +132,11 @@ p {
 @media screen and (max-width: 400px) {
     html {
         font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    html {
+        font-size: 70%;
     }
 }
